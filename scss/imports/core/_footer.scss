@@ -246,11 +246,20 @@ footer {
         .footer__total {
             .container {
                 .wrapper__footer-img {
-                    height: 265px;
-                    padding-top: 0;
+                    height: 280px;
+                    padding-top: 10px;
                     .footer__logo {
+                        &::before {
+                            margin-top: 30px;
+                            margin-right: 0;
+                        }
+                        &::after {
+                            margin-top: 30px;
+                            margin-left: 0;
+                        }
                         img {
-                            width: 70%;
+                            height: 70%;
+                            width: auto;
                         }
                     }
                     .footer__info {

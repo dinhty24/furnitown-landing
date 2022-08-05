@@ -293,10 +293,14 @@
     }
 }
 @media screen and (max-width: 420px) {
-    .main__product .wrapper__product .product__text p {
-        padding-top: 65px;
-        font-size: 18px;
-        line-height: 40px;
+    .main__product .wrapper__product .product__text {
+        right: 25px;
+        padding-top: 106px;
+        p {
+            padding-top: 0px;
+            font-size: 18px;
+            line-height: 26px;
+        }
     }
     .main__product .wrapper__product {
         height: 275px;
@@ -323,6 +327,11 @@
         .product__work-caption
         .product__work-text
         p {
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    .product__detail .product__work .product__text .product__text-title .product__title h2 {
         font-size: 14px;
         line-height: 26px;
     }

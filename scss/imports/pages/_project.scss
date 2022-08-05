@@ -228,6 +228,9 @@ img {
 @media screen and (max-width: 767px) {
     .project {
         padding-top: 85px;
+        .pages {
+            margin-bottom: 10px;
+        }
         .project__detail {
             margin-top: 70px;
 

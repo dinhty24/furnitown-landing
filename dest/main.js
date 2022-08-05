@@ -101,19 +101,13 @@ if(PAGE ==="service"){
     const navMenu=document.querySelector('.nav__menu')
     const closeMenu=document.querySelector('.close-icon')
     menuScroll.addEventListener('click',function(){
-        navMain.classList.toggle('active')
-        
-
-        
-    
+        navMain.classList.toggle('active')      
     })
     closeMenu.addEventListener('click',function(){
         console.log(closeMenu)
             navMain.classList.remove('active')
     })
 }
-
-
 
 if(PAGE ==="wpcontact"){
     const menuScroll=document.querySelector('.menu__scroll')
@@ -122,11 +116,7 @@ if(PAGE ==="wpcontact"){
     const navMenu=document.querySelector('.nav__menu')
     const closeMenu=document.querySelector('.close-icon')
     menuScroll.addEventListener('click',function(){
-        navMain.classList.toggle('active')
-        
-
-        
-    
+        navMain.classList.toggle('active')    
     })
     closeMenu.addEventListener('click',function(){
         console.log(closeMenu)
@@ -134,9 +124,6 @@ if(PAGE ==="wpcontact"){
     })
 
 }
-
-
-
 
 const backToTop=document.querySelector('.back')
 backToTop.addEventListener('click',function(){

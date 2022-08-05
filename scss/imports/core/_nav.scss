@@ -134,26 +134,6 @@
     }
 }
 
-// @media screen and (max-width: 768px) {
-//     .welcome {
-//         margin-left: 20px;
-//         margin-right: 20px;
-//     }
-//     .icon__menu {
-//         display: flex;
-//     }
-//     .header__menu .wrapper__header {
-//         display: none;
-//     }
-//     .header__menu::after {
-//         display: none;
-//     }
-//     .product__img {
-//         display: grid;
-//         grid-template-columns: 1fr;
-//         margin: 20px 20px 20px;
-//     }
-// }
 .menu__scroll {
     width: 180px;
     height: 180px;
@@ -201,3 +181,148 @@
         }
     }
 }
+@media screen and (max-width: 767px) {
+    .welcome {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .icon__menu {
+        display: flex;
+    }
+    .header__menu .wrapper__header {
+        display: none;
+    }
+    .header__menu::after {
+        display: none;
+    }
+    .product__img {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 20px 20px 20px;
+    }
+
+    .nav__main {
+        max-width: 70%;
+        .nav__header {
+            flex-direction: column;
+        }
+        .nav__icon-list {
+            padding-top: 20px;
+            padding-left: 15px;
+            padding-right: 5px;
+            .nav__list {
+                li {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .nav__main {
+        max-width: 80%;
+        .nav__header {
+            align-items: flex-start;
+        }
+        .nav__icon-list {
+            padding-top: 20px;
+            padding-left: 15px;
+            padding-right: 5px;
+            .nav__list {
+                li {
+                    // padding: unset;
+                    font-size: 16px;
+                }
+            }
+        }
+        .nav__content {
+            .nav__content-icon {
+                i {
+                    img {
+                        width: auto;
+                        height: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .nav__main {
+        max-width: 80%;
+        .nav__header {
+            align-items: flex-start;
+            flex-direction: column;
+        }
+        .nav__icon-list {
+            padding-top: 20px;
+            padding-left: 15px;
+            padding-right: 5px;
+            .nav__list {
+                li {
+                    // padding: unset;
+                    font-size: 16px;
+                }
+            }
+        }
+        .nav__content {
+            .nav__content-icon {
+                i {
+                    &::after {
+                        width: 68px;
+                    }
+                    img {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+// .newswp {
+//     .wrapper__project {
+//         .background__news {
+//             height: 300px;
+//             position: relative;
+//             .news__title {
+//                 h2 {
+//                     top: 140px;
+//                     &::after {
+//                         display: none;
+//                     }
+//                 }
+//             }
+//         }
+//         .btn__top-news {
+//             // position: unset;
+//             display: none;
+//         }
+//         .nav__main {
+//             max-width: 80%;
+//             .nav__header {
+//                 align-items: flex-start;
+//             }
+//             .nav__icon-list {
+//                 padding-top: 20px;
+//                 padding-left: 15px;
+//                 padding-right: 5px;
+//                 .nav__list {
+//                     li {
+//                         padding: unset;
+//                         font-size: 16px;
+//                     }
+//                 }
+//             }
+//             .nav__content {
+//                 .nav__content-icon {
+//                     i {
+//                         img {
+//                             width: 50%;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
