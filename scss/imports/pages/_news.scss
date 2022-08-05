@@ -1,0 +1,103 @@
+img {
+    width: 100%;
+}
+.news {
+    .background__news {
+        height: 455px;
+        background-color: rgba(0, 0, 0, 0.4);
+        position: relative;
+        img {
+            position: absolute;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .news__title {
+            h2 {
+                position: absolute;
+                top: 260px;
+                font-family: "eb";
+                font-size: 26px;
+                line-height: 50px;
+                color: #fff;
+                text-transform: uppercase;
+
+                &::after {
+                    content: "";
+                    width: 800px;
+                    height: 1px;
+                    transform: translateY(35px);
+                    background-color: #fff;
+                    display: block;
+                }
+            }
+        }
+    }
+    .btn__top-news {
+        position: absolute;
+        top: 50px;
+        left: 30px;
+        width: 180px;
+        z-index: 3;
+        display: flex;
+        justify-content: space-around;
+        text-transform: uppercase;
+        color: #fff;
+        p {
+            font-family: "ah";
+            font-size: 11px;
+        }
+        i {
+            img {
+                width: auto;
+            }
+        }
+    }
+    .project {
+        // margin-top: -250px;
+        .project__work-caption {
+            padding: 15px;
+
+            .project__work-text {
+                h4 {
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .color__new {
+            &:hover {
+                background-color: #6d5019;
+                opacity: 0.9;
+                color: #fff;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12px;
+            }
+        }
+    }
+    .news {
+        margin-top: -250px;
+        // &::before {
+        //     content: "";
+        //     width: 100%;
+        //     height: 1px;
+        //     background-color: #fff;
+        //     display: block;
+        //     position: absolute;
+        // }
+    }
+    @media screen and (max-width: 767px) {
+        .project .project__detail .project__grid {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        .background__news .news__title h2 {
+            font-size: 20px;
+        }
+        .project .project__detail .project__grid .project__work-wrap .project__work-detail .project__work-img::after {
+            display: none;
+        }
+        .background__news .news__title h2::after {
+            width: 500px;
+        }
+    }
+}

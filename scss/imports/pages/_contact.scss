@@ -1,0 +1,219 @@
+.contact {
+    height: 800px;
+    position: relative;
+    .bg__contact {
+        img {
+            position: absolute;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .wrapper__contact {
+        top: 160px;
+        z-index: 1;
+        position: relative;
+
+        .contact__detail {
+            position: absolute;
+            top: 20%;
+
+            // padding-left: 20px;
+            // padding-right: 20px;
+            .contact__title {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 30px;
+                .contact__us {
+                    // max-width: 350px;
+                    // margin-right: 180px;
+                    h4 {
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 12px;
+                        text-transform: uppercase;
+                        color: #ab9051;
+                        font-weight: bold;
+                        line-height: 8px;
+                    }
+
+                    p {
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 12px;
+                        line-height: 22px;
+                        color: #fff;
+                        padding-top: 20px;
+                    }
+                }
+                .wrapper__inf {
+                    margin-left: 30px;
+                    .hotline-email {
+                        display: flex;
+                        justify-content: left;
+                        color: #fff;
+                        .hotline {
+                            padding-right: 50px;
+                            margin-bottom: 30px;
+                            h4 {
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: 12px;
+                                text-transform: uppercase;
+                                color: #ab9051;
+                                font-weight: bold;
+                                line-height: 8px;
+                            }
+                            p {
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: 12px;
+                                line-height: 22px;
+                                color: #fff;
+                                padding-top: 20px;
+                            }
+                        }
+                        .email {
+                            padding-left: 39px;
+                            h4 {
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: 12px;
+                                text-transform: uppercase;
+                                color: #ab9051;
+                                font-weight: bold;
+                                line-height: 8px;
+                            }
+                            p {
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: 12px;
+                                line-height: 22px;
+                                color: #fff;
+                                padding-top: 20px;
+                            }
+                        }
+                    }
+
+                    .address {
+                        // max-width: 330px;
+                        h4 {
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 12px;
+                            text-transform: uppercase;
+                            color: #ab9051;
+                            font-weight: bold;
+                            line-height: 8px;
+                        }
+                        p {
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 12px;
+                            line-height: 22px;
+                            color: #fff;
+                            padding-top: 20px;
+                        }
+                    }
+                }
+            }
+            .contact__form {
+                p {
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 12px;
+                    line-height: 22px;
+                    color: #fff;
+                    padding-top: 20px;
+                }
+                .form__detail {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 30px;
+                    .form__name-email {
+                        display: flex;
+                        flex-direction: column;
+                        .form__label {
+                            display: flex;
+                            flex-direction: column;
+                            label {
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: 12px;
+                                line-height: 82px;
+                                color: #fff;
+                            }
+                            input {
+                                border: none;
+                                background-color: transparent;
+                                border-bottom: 1px solid #ab9051;
+                                outline: none;
+                                color: #fff;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                    .form__address-message {
+                        display: flex;
+                        flex-direction: column;
+                        .form__label {
+                            display: flex;
+                            flex-direction: column;
+                            label {
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: 12px;
+                                line-height: 82px;
+                                color: #fff;
+                            }
+                            input {
+                                outline: none;
+
+                                border: none;
+                                background-color: transparent;
+                                border-bottom: 1px solid #ab9051;
+                            }
+                            textarea {
+                                outline: none;
+
+                                border: none;
+                                background-color: transparent;
+                                border-bottom: 1px solid #ab9051;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .contact {
+        height: 900px;
+        img {
+            width: auto;
+            height: 100%;
+        }
+    }
+    .contact .wrapper__contact .contact__detail .contact__title {
+        grid-template-columns: 1fr;
+        .wrapper__inf {
+            margin-left: 0;
+        }
+    }
+    .contact .wrapper__contact .contact__detail .contact__form .form__detail .form__name-email .form__label label {
+        line-height: 40px;
+    }
+    .contact .wrapper__contact .contact__detail .contact__form .form__detail .form__address-message .form__label label {
+        line-height: 40px;
+    }
+    .contact .wrapper__contact .contact__detail {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .contact .wrapper__contact .contact__detail .contact__form .form__detail {
+        display: grid;
+        height: 100px;
+        grid-template-columns: 1fr;
+    }
+
+    .project .all__project h2 {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .contact__title {
+        grid-template-columns: 1fr;
+    }
+    .contact .wrapper__contact .contact__detail .contact__title {
+        grid-template-columns: 1fr;
+    }
+}

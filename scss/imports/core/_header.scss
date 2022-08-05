@@ -1,0 +1,170 @@
+// css header
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: #132539;
+    z-index: 200;
+    transform: translateY(-100%);
+    display: none;
+    transition: 0.3s;
+    // position: relative;
+    .icon__menu-mobile {
+        cursor: pointer;
+        display: none;
+        > i {
+            display: flex;
+            font-size: 30px;
+            color: #fff;
+        }
+    }
+    &.active {
+        transform: translateY(0);
+        display: flex;
+        justify-content: center;
+        transition: 0.3s;
+        position: fixed;
+    }
+
+    .main__header {
+        // &.active {
+        //     width: 100%;
+        //     background-color: #132539;
+        //     display: flex;
+        //     position: fixed;
+        //     z-index: 100;
+        // }
+        // .containernav__menu {
+        .nav__menu {
+            max-width: 960px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .nav__menu-left {
+                ul {
+                    display: flex;
+                    justify-content: space-around;
+                    width: 350px;
+                    li {
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 14px;
+                        color: #fff;
+                        text-transform: uppercase;
+                        &:hover {
+                            color: rgb(177, 165, 165);
+                            cursor: pointer;
+                        }
+                        a {
+                            color: unset;
+                        }
+                    }
+                }
+            }
+            // .nav__menu-center
+            a {
+                object-fit: cover;
+                z-index: 100;
+                cursor: pointer;
+            }
+            .nav__menu-right {
+                ul {
+                    display: flex;
+                    justify-content: space-around;
+                    width: 350px;
+                    height: 100%;
+                    li {
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 14px;
+                        color: #fff;
+                        text-transform: uppercase;
+                        &:hover {
+                            color: rgb(177, 165, 165);
+                            cursor: pointer;
+                        }
+                        a {
+                            color: unset;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.btn__top {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 180px;
+    display: flex;
+    justify-content: space-around;
+}
+header {
+    .icon__menu-small {
+        span {
+            // display: none;
+
+            content: "";
+            width: 30px;
+            height: 1px;
+            background-color: #fff;
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            &::before {
+                content: "";
+                width: 30px;
+                height: 1px;
+                background-color: #fff;
+                position: absolute;
+                transform: translateY(-10px);
+
+                left: 0;
+            }
+            &::after {
+                content: "";
+                width: 30px;
+                height: 1px;
+                background-color: #fff;
+                position: absolute;
+                transform: translateX(-20px);
+                left: 20px;
+                bottom: -10px;
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 993px) {
+    header {
+        .main__header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-right: 45px;
+            width: 100%;
+        }
+        .icon__menu-mobile {
+            padding-left: 20px;
+            display: flex;
+            > i {
+                margin: auto;
+            }
+        }
+    }
+}
+@media screen and (max-width: 420px) {
+    header {
+        height: 60px;
+        .main__header {
+            padding-right: 20px;
+            .nav__menu {
+                a {
+                    img {
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
+}
