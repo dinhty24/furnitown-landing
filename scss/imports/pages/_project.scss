@@ -100,6 +100,7 @@ img {
                     .project__work-caption {
                         position: relative;
                         color: #000;
+                        padding-left: 5px;
                         &:hover {
                             color: #fff;
                             background-color: #6d5019;
@@ -227,49 +228,46 @@ img {
 @media screen and (max-width: 767px) {
     .project {
         padding-top: 85px;
-    }
-    .project .all__project::after {
-        transform: translateY(20px);
-    }
-    .project
-        .project__detail
-        .project__grid
-        .project__work-wrap
-        .project__work-detail
-        .project__work-caption
-        .project__work-text {
-        padding-top: 0;
-    }
-    .project
-        .project__detail
-        .project__grid
-        .project__work-wrap
-        .project__work-detail
-        .project__work-caption
-        .project__work-text
-        h4 {
-        margin-bottom: 10px;
-    }
-    .project .project__work-caption {
-        padding: 0;
-    }
-    .project
-        .project__detail
-        .project__grid
-        .project__work-wrap
-        .project__work-detail
-        .project__work-caption
-        .project__work-text
-        p {
-        margin-bottom: 0;
-    }
-    .project .all__project .all__project-text {
-        display: unset;
-    }
-    .project .all__project .all__project-text .btn__project {
-        margin-top: 15px;
-    }
-    .project .project__detail {
-        margin-top: 50px;
+        .project__detail {
+            margin-top: 70px;
+
+            .project__grid {
+                grid-template-columns: 1fr;
+                margin-bottom: 20px;
+                .project__work-wrap {
+                    .project__work-detail {
+                        .project__work-img {
+                            &::after {
+                                position: unset;
+                            }
+                        }
+                        .project__work-caption {
+                            padding: 0;
+
+                            .project__work-text {
+                                padding-top: 0;
+                                h4 {
+                                    margin-bottom: 10px;
+                                }
+                                p {
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .all__project {
+            &::after {
+                transform: translateY(20px);
+            }
+            .all__project-text {
+                display: unset;
+                .btn__project {
+                    margin-top: 15px;
+                }
+            }
+        }
     }
 }

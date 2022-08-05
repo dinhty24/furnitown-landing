@@ -211,40 +211,58 @@ footer {
         }
     }
 }
+@media screen and (max-width: 1440px) {
+    footer .footer__total .container .wrapper__footer-img .back {
+        right: -65px;
+    }
+}
 
 @media screen and (max-width: 993px) {
-    footer .footer__total .container .wrapper__footer-img {
-        height: 370px;
-        padding-top: 30px;
-    }
-    footer .footer__total .container .wrapper__footer-img .back {
-        right: -20px;
-    }
-    footer .footer__total .container .wrapper__footer-img .back::before {
-        margin-right: 0;
-    }
-}
-@media screen and (max-width: 767px) {
-    footer .footer__total .container .wrapper__footer-img .back {
-        right: -70px;
-    }
-}
-@media screen and (max-width: 420px) {
     footer {
         .footer__total {
             .container {
                 .wrapper__footer-img {
-                    height: 310px;
-                    padding-top: unset;
+                    height: 370px;
+                    padding-top: 30px;
                     .back {
-                        right: -74px;
+                        right: -50px;
+
+                        &::before {
+                            margin-right: 0;
+                        }
                     }
                 }
             }
         }
     }
-    .footer__total .container .wrapper__footer-img {
-        height: 390px;
-        padding-top: 0;
+}
+// @media screen and (max-width: 767px) {
+//     footer .footer__total .container .wrapper__footer-img .back {
+//         right: -70px;
+//     }
+// }
+@media screen and (max-width: 420px) {
+    footer {
+        .footer__total {
+            .container {
+                .wrapper__footer-img {
+                    height: 265px;
+                    padding-top: 0;
+                    .footer__logo {
+                        img {
+                            width: 70%;
+                        }
+                    }
+                    .footer__info {
+                        margin-top: 0;
+                    }
+                    .back {
+                        right: -74px;
+                        &::before {
+                        }
+                    }
+                }
+            }
+        }
     }
 }

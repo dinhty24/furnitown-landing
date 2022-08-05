@@ -13,6 +13,20 @@ if (PAGE === "projectdetail"){
     const tabItem = document.querySelectorAll('.tab__item')
     console.log(tabItem);
 
+    const menuScrolll=document.querySelector('.menu__scroll')
+    const navMainn = document.querySelector('.nav__main')
+    
+    const navMenu=document.querySelector('.nav__menu')
+    const closeMenu=document.querySelector('.close-icon')
+    menuScrolll.addEventListener('click',function(e){
+        e.stopPropagation();
+        navMainn.classList.toggle('active')
+    })
+    closeMenu.addEventListener('click',function(e){
+        console.log(closeMenu)
+        e.stopPropagation();
+            navMainn.classList.remove('active')
+    })  
 
     btnTabItem.forEach(function(btn, index){
         btn.addEventListener('click', function(){
@@ -29,13 +43,28 @@ if (PAGE === "projectdetail"){
     })
 }
 
-if(PAGE ==="news")
+if(PAGE ==="newswp")
 {
     const btnTabItem =  document.querySelectorAll('.btn__tabItem')
     console.log(btnTabItem);
     const tabItem = document.querySelectorAll('.tab__item')
     console.log(tabItem);
+        const menuScrolll=document.querySelector('.menu__scroll')
+    const navMainn = document.querySelector('.nav__main')
 
+    const navMenu=document.querySelector('.nav__menu')
+    const closeMenu=document.querySelector('.close-icon')
+    menuScrolll.addEventListener('click',function(){
+        navMainn.classList.toggle('active')
+        
+
+        
+
+    })
+    closeMenu.addEventListener('click',function(){
+        console.log(closeMenu)
+            navMainn.classList.remove('active')
+    })
 
     btnTabItem.forEach(function(btn, index){
         btn.addEventListener('click', function(){
@@ -51,6 +80,64 @@ if(PAGE ==="news")
         })
     })
 }
+// const menuScrolll=document.querySelector('.menu__scroll')
+// const navMainn = document.querySelector('.nav__main')
+
+// const navMenu=document.querySelector('.nav__menu')
+// const closeMenu=document.querySelector('.close-icon')
+// menuScrolll.addEventListener('click',function(e){
+//     e.stopPropagation();
+//     navMainn.classList.toggle('active')
+// })
+// closeMenu.addEventListener('click',function(e){
+//     console.log(closeMenu)
+//     e.stopPropagation();
+//         navMainn.classList.remove('active')
+// })
+if(PAGE ==="service"){
+    const menuScroll=document.querySelector('.menu__scroll')
+    const navMain = document.querySelector('.nav__main')
+
+    const navMenu=document.querySelector('.nav__menu')
+    const closeMenu=document.querySelector('.close-icon')
+    menuScroll.addEventListener('click',function(){
+        navMain.classList.toggle('active')
+        
+
+        
+    
+    })
+    closeMenu.addEventListener('click',function(){
+        console.log(closeMenu)
+            navMain.classList.remove('active')
+    })
+}
+
+
+
+if(PAGE ==="wpcontact"){
+    const menuScroll=document.querySelector('.menu__scroll')
+    const navMain = document.querySelector('.nav__main')
+
+    const navMenu=document.querySelector('.nav__menu')
+    const closeMenu=document.querySelector('.close-icon')
+    menuScroll.addEventListener('click',function(){
+        navMain.classList.toggle('active')
+        
+
+        
+    
+    })
+    closeMenu.addEventListener('click',function(){
+        console.log(closeMenu)
+            navMain.classList.remove('active')
+    })
+
+}
+
+
+
+
 const backToTop=document.querySelector('.back')
 backToTop.addEventListener('click',function(){
     window.scrollTo({
@@ -87,12 +174,6 @@ const closeIcon = document.querySelector('.close-icon')
 
 const iconMenuMbile = document.querySelector('header .icon__menu-mobile')
 const menuScroll= document.querySelector('.menu__scroll')
-// menuScroll.addEventListener('click',function(){
-//     // navMain.classList.add('active')
-//     menuScroll.classList.add()
-// })
-
-
 iconMenuMbile.addEventListener('click', function(){
     console.log('click...');
     navMain.classList.add('active')
@@ -107,10 +188,6 @@ closeIcon.addEventListener('click', function(e){
     e.stopPropagation();
     navMain.classList.remove('active')
 })
-
-
-
-
 // const head=document.querySelectorAll('menu__main')
 // head.addEventListener('click',function(){
 
@@ -147,7 +224,7 @@ closeIcon.addEventListener('click', function(e){
 // })
 
 
-const menuMain=document.querySelector('.manu__main')
+const menuMain=document.querySelector('.menu__main')
 
 
 
@@ -168,19 +245,19 @@ iconMenuMobile.addEventListener('click', function(){
 // const navMain = document.querySelectorAll('.nav__main')
 
 
-// const items = document.querySelectorAll('.nav__main');
+const items = document.querySelectorAll('.nav__main');
 
-// items .forEach(item => {
-//   item.addEventListener("click", function() {   
-//    items .forEach(a=>{
-//       a.classList.remove("active");
-//       a.style.display = 'none'; 
-//     });
-//      item.classList.add("active");
-//      item.style.display = 'block'; 
+items .forEach(item => {
+  item.addEventListener("click", function() {   
+   items .forEach(a=>{
+      a.classList.remove("active");
+      a.style.display = 'none'; 
+    });
+     item.classList.add("active");
+     item.style.display = 'block'; 
     
-//   });  
-// });
+  });  
+});
 
 // console.log(newData);
 // const html = newData.map((item) => (`<h1>${item.title}</h1>`))
@@ -257,3 +334,5 @@ btnTabItem.forEach(function(btn, index){
 //     lien.classList.remove('active')
 //     })
 // })
+
+
