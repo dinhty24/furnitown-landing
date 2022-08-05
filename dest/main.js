@@ -87,10 +87,10 @@ const closeIcon = document.querySelector('.close-icon')
 
 const iconMenuMbile = document.querySelector('header .icon__menu-mobile')
 const menuScroll= document.querySelector('.menu__scroll')
-menuScroll.addEventListener('click',function(){
-    navMain.classList.add('active')
-    menuScroll.classList.add()
-})
+// menuScroll.addEventListener('click',function(){
+//     // navMain.classList.add('active')
+//     menuScroll.classList.add()
+// })
 
 
 iconMenuMbile.addEventListener('click', function(){
@@ -147,18 +147,18 @@ closeIcon.addEventListener('click', function(e){
 // })
 
 
-// const menuMain=document.querySelector('.manu__main')
+const menuMain=document.querySelector('.manu__main')
 
 
 
 
-// const iconMenuMobile = document.querySelector('.icon__menu')
-// const menuMobile = document.querySelector('.menu__mobile')
-// console.log(menuMobile);
+const iconMenuMobile = document.querySelector('.icon__menu')
+const menuMobile = document.querySelector('.menu__mobile')
+console.log(menuMobile);
 
-// iconMenuMobile.addEventListener('click', function(){
-//     menuMobile.classList.toggle('active')
-// })
+iconMenuMobile.addEventListener('click', function(){
+    menuMobile.classList.toggle('active')
+})
 
 
 
