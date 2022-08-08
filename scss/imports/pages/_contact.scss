@@ -210,6 +210,9 @@
     }
 }
 @media screen and (max-width: 420px) {
+    .contact {
+        height: 870px;
+    }
     .contact__title {
         grid-template-columns: 1fr;
     }

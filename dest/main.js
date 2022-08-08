@@ -80,20 +80,6 @@ if(PAGE ==="newswp")
         })
     })
 }
-// const menuScrolll=document.querySelector('.menu__scroll')
-// const navMainn = document.querySelector('.nav__main')
-
-// const navMenu=document.querySelector('.nav__menu')
-// const closeMenu=document.querySelector('.close-icon')
-// menuScrolll.addEventListener('click',function(e){
-//     e.stopPropagation();
-//     navMainn.classList.toggle('active')
-// })
-// closeMenu.addEventListener('click',function(e){
-//     console.log(closeMenu)
-//     e.stopPropagation();
-//         navMainn.classList.remove('active')
-// })
 if(PAGE ==="service"){
     const menuScroll=document.querySelector('.menu__scroll')
     const navMain = document.querySelector('.nav__main')
@@ -133,6 +119,15 @@ backToTop.addEventListener('click',function(){
     })
 })
 
+const menuMb=document.querySelector('.menu__mobiles')
+const iconMenu=document.querySelector('.icon__menu-mobile')
+const exit=document.querySelector('.exit')
+ iconMenu.addEventListener('click',function(){
+    menuMb.classList.toggle('active')
+    exit.addEventListener('click',function(){
+        menuMb.classList.remove('active')
+    })
+ })
 
 
 
@@ -175,10 +170,7 @@ closeIcon.addEventListener('click', function(e){
     e.stopPropagation();
     navMain.classList.remove('active')
 })
-// const head=document.querySelectorAll('menu__main')
-// head.addEventListener('click',function(){
 
-// })
 
 
 // const root = document.querySelector('.root')
@@ -197,25 +189,7 @@ closeIcon.addEventListener('click', function(e){
 //     }
 //   )
 // }
-// nav__menu
-
-
-// navMain.forEach(function(hienthi){
-//     hienthi.addEventListener('click',function(){
-//         navMain.forEach(function(hien){
-//             hien.classList.add('active')
-//         })
-//         hienthi.classList.remove('active')
-//     })
-
-// })
-
-
 const menuMain=document.querySelector('.menu__main')
-
-
-
-
 const iconMenuMobile = document.querySelector('.icon__menu')
 const menuMobile = document.querySelector('.menu__mobile')
 console.log(menuMobile);
@@ -223,15 +197,6 @@ console.log(menuMobile);
 iconMenuMobile.addEventListener('click', function(){
     menuMobile.classList.toggle('active')
 })
-
-
-
-
-// menuMain.forEach()
-
-// const navMain = document.querySelectorAll('.nav__main')
-
-
 const items = document.querySelectorAll('.nav__main');
 
 items .forEach(item => {
@@ -259,25 +224,6 @@ lienHe.forEach(function(contact){
         contact.classList.add('active')
     })
 })
-
-
-// const btnPage=document.querySelectorAll('.btn')
-// console.log(btnPage)
-// btnPage.forEach(function(item){
-//     item.addEventListener('click',function(){
-//         btnPage.forEach(function(new_item){
-//             if(new_item==item)
-//            { 
-//             new_item.classList.add('active')
-//            }
-//            else
-//            new_item.classList.remove('active')
-
-//         })
-
-//     })
-// })
-
 const btnTabItem =  document.querySelectorAll('.btn__tabItem')
 console.log(btnTabItem);
 const tabItem = document.querySelectorAll('.tab__item')
@@ -297,21 +243,6 @@ btnTabItem.forEach(function(btn, index){
         document.querySelector(`.tab__project-${tabID}`).classList.add('active')
     })
 })
-
-
-// const mang=document.querySelectorAll('.btn')
-// mang.forEach(function(element){
-//     element.addEventListener('click',function(){
-//         mang.forEach(function(element_af){
-//             element_af.classList.add('active')
-
-//         })
-//         element.classList.remove('active')
-//     })
-// })
-// const show=document.querySelector('.menu__allproject')
-
-
 // const lienHe=document.querySelectorAll('.lienhe')
 // lienHe.forEach(function(lien){
 //     lien.addEventListener('click',function(){
@@ -321,5 +252,17 @@ btnTabItem.forEach(function(btn, index){
 //     lien.classList.remove('active')
 //     })
 // })
+// const menuScrolll=document.querySelector('.menu__scroll')
+// const navMainn = document.querySelector('.nav__main')
 
-
+// const navMenu=document.querySelector('.nav__menu')
+// const closeMenu=document.querySelector('.close-icon')
+// menuScrolll.addEventListener('click',function(e){
+//     e.stopPropagation();
+//     navMainn.classList.toggle('active')
+// })
+// closeMenu.addEventListener('click',function(e){
+//     console.log(closeMenu)
+//     e.stopPropagation();
+//         navMainn.classList.remove('active')
+// })

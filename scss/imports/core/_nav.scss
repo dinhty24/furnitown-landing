@@ -250,6 +250,7 @@
 
 @media screen and (max-width: 420px) {
     .nav__main {
+        display: none;
         max-width: 80%;
         .nav__header {
             align-items: flex-start;
