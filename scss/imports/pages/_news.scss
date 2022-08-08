@@ -106,4 +106,26 @@ img {
     .newswp .btn__top-news {
         display: none;
     }
+    .newswp {
+        .background__news {
+            height: 330px;
+            .news__title {
+                h2 {
+                    top: 170px;
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    // .background__news {
+    //     .news__title {
+    //         h2 {
+    //             &::after {
+    //                 width: 250px;
+    //             }
+    //         }
+    //     }
+    // }
 }

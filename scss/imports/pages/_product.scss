@@ -25,8 +25,9 @@
         width: 100%;
         background-color: #132539;
         color: #fff;
-        display: flex;
         transform: translateX(-100%);
+        display: flex;
+        padding-top: 60px;
         flex-direction: column;
         padding-left: 80px;
 
@@ -37,6 +38,7 @@
         .menu__mobiles-top {
             text-align: center;
             display: flex;
+            padding-bottom: 20px;
 
             .icon {
                 display: flex;
@@ -50,7 +52,6 @@
             }
             .exit {
                 color: #fff;
-                padding: 0 20px 0 30px;
                 i {
                     margin-right: -80px;
                 }
@@ -63,8 +64,14 @@
             li {
                 padding: 15px;
                 text-transform: uppercase;
+                color: #fff;
+
+                &:hover {
+                    color: rgb(177, 165, 165);
+                    cursor: pointer;
+                }
                 a {
-                    color: #fff;
+                    color: unset;
                 }
             }
         }
