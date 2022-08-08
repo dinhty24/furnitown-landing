@@ -132,14 +132,17 @@ const exit=document.querySelector('.exit')
 
 
 const header=document.querySelector('header')
+const offMenuMain=document.querySelector('.menu__main')
 window.addEventListener('scroll',function(){
     // e.stopPropagation();
 
     let positionY = window.pageYOffset;
     if(positionY > 70){
         header.classList.add('active')
+        offMenuMain.classList.remove('menu__main')
     }else{
         header.classList.remove('active')
+        offMenuMain.classList.add('menu__main')
 
     }
 })
