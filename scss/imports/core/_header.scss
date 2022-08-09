@@ -24,6 +24,8 @@ header {
         justify-content: center;
         transition: 0.6s;
         position: fixed;
+        top: 0;
+        left: 0;
     }
 
     .main__header {
@@ -252,9 +254,15 @@ header {
                     flex-direction: row;
                     justify-content: space-around;
                     align-items: center;
-                    i {
-                        padding-right: 10px;
-                        padding-left: 10px;
+                    a {
+                        color: #fff;
+                        i {
+                            padding-right: 10px;
+                            padding-left: 10px;
+                            &:hover {
+                                color: gray;
+                            }
+                        }
                     }
                 }
                 .exit {

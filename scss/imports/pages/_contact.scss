@@ -1,5 +1,12 @@
+.wrapper__project {
+    .btn__top {
+    }
+    // .menu__scroll {
+    //     display: none;
+    // }
+}
 .contact {
-    height: 800px;
+    height: 670px;
     position: relative;
     .bg__contact {
         img {
@@ -16,6 +23,8 @@
         .contact__detail {
             position: absolute;
             top: 20%;
+            margin-left: 15%;
+            margin-right: 15%;
 
             // padding-left: 20px;
             // padding-right: 20px;
@@ -28,16 +37,17 @@
                     // margin-right: 180px;
                     h4 {
                         font-family: Arial, Helvetica, sans-serif;
-                        font-size: 12px;
+                        font-size: 14px;
                         text-transform: uppercase;
                         color: #ab9051;
                         font-weight: bold;
                         line-height: 8px;
+                        letter-spacing: 1.5px;
                     }
 
                     p {
                         font-family: Arial, Helvetica, sans-serif;
-                        font-size: 12px;
+                        font-size: 13px;
                         line-height: 22px;
                         color: #fff;
                         padding-top: 20px;
@@ -50,19 +60,19 @@
                         justify-content: left;
                         color: #fff;
                         .hotline {
-                            padding-right: 50px;
                             margin-bottom: 30px;
                             h4 {
                                 font-family: Arial, Helvetica, sans-serif;
-                                font-size: 12px;
+                                font-size: 14px;
                                 text-transform: uppercase;
                                 color: #ab9051;
                                 font-weight: bold;
                                 line-height: 8px;
+                                letter-spacing: 1.5px;
                             }
                             p {
                                 font-family: Arial, Helvetica, sans-serif;
-                                font-size: 12px;
+                                font-size: 13px;
                                 line-height: 22px;
                                 color: #fff;
                                 padding-top: 20px;
@@ -72,15 +82,16 @@
                             padding-left: 39px;
                             h4 {
                                 font-family: Arial, Helvetica, sans-serif;
-                                font-size: 12px;
+                                font-size: 14px;
                                 text-transform: uppercase;
                                 color: #ab9051;
                                 font-weight: bold;
                                 line-height: 8px;
+                                letter-spacing: 1.5px;
                             }
                             p {
                                 font-family: Arial, Helvetica, sans-serif;
-                                font-size: 12px;
+                                font-size: 13px;
                                 line-height: 22px;
                                 color: #fff;
                                 padding-top: 20px;
@@ -92,15 +103,16 @@
                         // max-width: 330px;
                         h4 {
                             font-family: Arial, Helvetica, sans-serif;
-                            font-size: 12px;
+                            font-size: 14px;
                             text-transform: uppercase;
                             color: #ab9051;
                             font-weight: bold;
                             line-height: 8px;
+                            letter-spacing: 1.5px;
                         }
                         p {
                             font-family: Arial, Helvetica, sans-serif;
-                            font-size: 12px;
+                            font-size: 13px;
                             line-height: 22px;
                             color: #fff;
                             padding-top: 20px;
@@ -111,10 +123,11 @@
             .contact__form {
                 p {
                     font-family: Arial, Helvetica, sans-serif;
-                    font-size: 12px;
+                    font-size: 13px;
                     line-height: 22px;
                     color: #fff;
-                    padding-top: 20px;
+                    padding-top: 10px;
+                    margin-bottom: 20px;
                 }
                 .form__detail {
                     display: grid;
@@ -128,8 +141,8 @@
                             flex-direction: column;
                             label {
                                 font-family: Arial, Helvetica, sans-serif;
-                                font-size: 12px;
-                                line-height: 82px;
+                                font-size: 13px;
+                                line-height: 32px;
                                 color: #fff;
                             }
                             input {
@@ -138,7 +151,10 @@
                                 border-bottom: 1px solid #ab9051;
                                 outline: none;
                                 color: #fff;
-                                font-size: 12px;
+                                font-size: 13px;
+                                line-height: 20px;
+                                margin-bottom: 10px;
+                                text-transform: capitalize;
                             }
                         }
                     }
@@ -150,27 +166,57 @@
                             flex-direction: column;
                             label {
                                 font-family: Arial, Helvetica, sans-serif;
-                                font-size: 12px;
-                                line-height: 82px;
+                                font-size: 13px;
+                                line-height: 32px;
                                 color: #fff;
                             }
                             input {
                                 outline: none;
-
+                                color: #fff;
                                 border: none;
+                                font-size: 13px;
+                                line-height: 22px;
                                 background-color: transparent;
                                 border-bottom: 1px solid #ab9051;
+                                margin-bottom: 10px;
+                                text-transform: capitalize;
                             }
                             textarea {
+                                color: #fff;
                                 outline: none;
-
+                                font-size: 13px;
+                                line-height: 22px;
                                 border: none;
                                 background-color: transparent;
                                 border-bottom: 1px solid #ab9051;
+                                text-transform: capitalize;
                             }
                         }
                     }
                 }
+                button {
+                    width: 80px;
+                    height: 25px;
+                    margin-left: 90%;
+                    font-size: 13px;
+                    color: #fff;
+                    background-color: #000;
+                    border-radius: 3px;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: gray;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 993px) {
+    .contact {
+        .wrapper__contact {
+            .contact__detail {
+                margin-left: unset;
+                margin-right: unset;
             }
         }
     }
@@ -190,19 +236,28 @@
         }
     }
     .contact .wrapper__contact .contact__detail .contact__form .form__detail .form__name-email .form__label label {
-        line-height: 40px;
+        line-height: 32px;
     }
     .contact .wrapper__contact .contact__detail .contact__form .form__detail .form__address-message .form__label label {
-        line-height: 40px;
+        line-height: 32px;
     }
     .contact .wrapper__contact .contact__detail {
-        display: grid;
         grid-template-columns: 1fr;
+        gap: 0;
     }
-    .contact .wrapper__contact .contact__detail .contact__form .form__detail {
-        display: grid;
-        height: 100px;
-        grid-template-columns: 1fr;
+    .contact {
+        .wrapper__contact .contact__detail {
+            .contact__form {
+                .form__detail {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                }
+                button {
+                    margin-top: 32px;
+                    margin-left: 85%;
+                }
+            }
+        }
     }
 
     .project .all__project h2 {
@@ -211,12 +266,26 @@
 }
 @media screen and (max-width: 420px) {
     .contact {
-        height: 870px;
+        height: 980px;
     }
     .contact__title {
         grid-template-columns: 1fr;
     }
     .contact .wrapper__contact .contact__detail .contact__title {
         grid-template-columns: 1fr;
+    }
+    .contact {
+        .wrapper__contact {
+            .contact__detail {
+                .contact__form {
+                    .form__detail {
+                    }
+                    button {
+                        margin-top: 32px;
+                        margin-left: 65%;
+                    }
+                }
+            }
+        }
     }
 }

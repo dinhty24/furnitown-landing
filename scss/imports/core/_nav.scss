@@ -32,7 +32,12 @@
         justify-content: space-between;
         align-items: center;
         color: #fff;
-
+        a {
+            color: #fff;
+            &:hover {
+                color: gray;
+            }
+        }
         .follow__us-icon {
             display: flex;
             flex-direction: row;
@@ -43,8 +48,14 @@
             p {
                 margin-right: 20px;
             }
-            i {
+            a {
+                color: #fff;
                 margin-right: 20px;
+                i {
+                }
+                &:hover {
+                    color: gray;
+                }
             }
         }
     }
@@ -139,8 +150,8 @@
 }
 
 .menu__scroll {
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     background-color: #132539;
     position: fixed;
     top: 40%;

@@ -8,6 +8,8 @@
 // }
 .service {
     background-color: #fff;
+    margin-left: 125px;
+    margin-right: 125px;
     .service-us {
         .wrap__service-img {
             h2 {
@@ -42,13 +44,10 @@
                     text-transform: uppercase;
                     text-align: left;
                 }
-                .pservice {
-                    max-width: 270px;
-                    margin-top: 20px;
-                }
+
                 p {
                     font-family: Arial, Helvetica, sans-serif;
-                    font-size: 12px;
+                    font-size: 14px;
                     line-height: 26px;
                     margin-top: 20px;
                     margin-bottom: 20px;
@@ -69,16 +68,15 @@
                 display: flex;
                 justify-content: space-around;
                 margin-left: 20px;
-                p {
+                a {
                     background-color: #fafafa;
                     font-family: Arial, Helvetica, sans-serif;
-                    font-size: 13px;
+                    font-size: 14px;
                     color: #000;
                     text-transform: uppercase;
                     width: 200px;
                     height: 30px;
                     margin-top: 70px;
-                    cursor: pointer;
                     text-align: center;
                     display: flex;
                     align-items: center;
@@ -87,19 +85,10 @@
                         background-color: #000;
                         color: #fafafa;
                     }
+                    &:hover {
+                        border: 1px solid #000;
+                    }
                 }
-                // .pproduct {
-                //     background-color: #fafafa;
-                //     font-family: Arial, Helvetica, sans-serif;
-                //     font-size: 13px;
-                //     color: #000;
-                //     text-transform: uppercase;
-                //     cursor: pointer;
-                //     &.active {
-                //         background-color: #000;
-                //         color: #fafafa;
-                //     }
-                // }
             }
         }
     }
@@ -122,7 +111,7 @@
             height: 150px;
             margin: auto;
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 12px;
+            font-size: 14px;
             line-height: 26px;
         }
     }
@@ -146,6 +135,21 @@
     .service .service-us .service__advise .advise__text::after {
         transform: translateY(50px);
     }
+    .container {
+        .service {
+            margin-left: unset;
+            margin-right: unset;
+            .service-us {
+                .service__advise {
+                    .contact-product {
+                        a {
+                            margin-top: unset;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width: 767px) {
     .service .service-us .service__advise .contact-product {
@@ -168,5 +172,21 @@
     }
     .service .service-construct {
         margin-top: unset;
+    }
+}
+@media screen and (max-width: 420px) {
+    .container {
+        .service {
+            .service-us {
+                .service__advise {
+                    .contact-product {
+                        flex-direction: column;
+                        a {
+                            width: auto;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

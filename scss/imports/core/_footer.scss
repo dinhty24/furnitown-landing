@@ -158,11 +158,18 @@ footer {
 
                     p {
                         font-family: Arial, Helvetica, sans-serif;
-                        font-size: 11px;
+                        font-size: 16px;
                         text-transform: uppercase;
                         color: #fff;
                         text-align: center;
                         line-height: 26px;
+                    }
+                    a {
+                        font-size: 16px;
+                        color: #fff;
+                        &:hover {
+                            color: gray;
+                        }
                     }
                 }
                 .back {
@@ -186,7 +193,7 @@ footer {
                     // }
                     span {
                         font-family: Arial, Helvetica, sans-serif;
-                        font-size: 11px;
+                        font-size: 16px;
                         line-height: 26px;
                         color: #fff;
                         text-transform: uppercase;
@@ -224,11 +231,22 @@ footer {
                 .wrapper__footer-img {
                     height: 370px;
                     padding-top: 30px;
+                    .footer__info {
+                        p {
+                            font-size: 12px;
+                        }
+                    }
                     .back {
-                        right: -50px;
+                        right: -30px;
+                        bottom: 130px;
+                        span {
+                            font-size: 12px;
+                            color: #d4a549;
+                            font-weight: bold;
+                        }
 
                         &::before {
-                            margin-right: 0;
+                            display: none;
                         }
                     }
                 }
@@ -236,17 +254,34 @@ footer {
         }
     }
 }
-// @media screen and (max-width: 767px) {
-//     footer .footer__total .container .wrapper__footer-img .back {
-//         right: -70px;
-//     }
-// }
+@media screen and (max-width: 767px) {
+    footer {
+        .footer__total {
+            .container {
+                .wrapper__footer-img {
+                    .back {
+                        right: -20px;
+                        span {
+                            font-size: 12px;
+                            color: #d4a549;
+                            font-weight: bold;
+                        }
+
+                        &::before {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width: 420px) {
     footer {
         .footer__total {
             .container {
                 .wrapper__footer-img {
-                    height: 280px;
+                    height: 300px;
                     padding-top: 10px;
                     .footer__logo {
                         &::before {
@@ -266,7 +301,9 @@ footer {
                         margin-top: 0;
                     }
                     .back {
-                        right: -74px;
+                        transform: rotate(0);
+                        bottom: 0;
+                        right: 0;
                         &::before {
                         }
                     }

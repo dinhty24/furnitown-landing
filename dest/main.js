@@ -80,7 +80,7 @@ if(PAGE ==="newswp")
         })
     })
 }
-if(PAGE ==="service"){
+if(PAGE ==="wpservice"){
     const menuScroll=document.querySelector('.menu__scroll')
     const navMain = document.querySelector('.nav__main')
 
@@ -93,6 +93,15 @@ if(PAGE ==="service"){
         console.log(closeMenu)
             navMain.classList.remove('active')
     })
+    const lienHe=document.querySelectorAll('.contact-product a')
+lienHe.forEach(function(contact){
+    contact.addEventListener('click',function(){
+        lienHe.forEach(function(moi){
+            moi.classList.remove('active')
+        })
+        contact.classList.add('active')
+    })
+})
 }
 
 if(PAGE ==="wpcontact"){
@@ -218,15 +227,7 @@ items .forEach(item => {
 // const html = newData.map((item) => (`<h1>${item.title}</h1>`))
 
 // root.appendChild(html)
-const lienHe=document.querySelectorAll('.contact-product p')
-lienHe.forEach(function(contact){
-    contact.addEventListener('click',function(){
-        lienHe.forEach(function(moi){
-            moi.classList.remove('active')
-        })
-        contact.classList.add('active')
-    })
-})
+
 const btnTabItem =  document.querySelectorAll('.btn__tabItem')
 console.log(btnTabItem);
 const tabItem = document.querySelectorAll('.tab__item')

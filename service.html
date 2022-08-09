@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="dest/fonts.css" />
   </head>
 
-  <body data-page="service" class="service">
+  <body data-page="wpservice" class="wpservice">
     <!-- HEADER -->
     <header>
       <div class="icon__menu-mobile">
@@ -59,8 +59,8 @@
         <div class="menu__mobiles-top">
           <div class="icon">
             <h5>FOLLOW US</h5>
-            <i class="fa-solid fa-envelope"></i>
-            <i class="fa-brands fa-facebook"></i>
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
           </div>
           <div class="exit">
             <i class="fa-solid fa-circle-xmark"></i>
@@ -93,11 +93,13 @@
         </div>
         <div class="nav__main">
           <div class="nav__header">
-            <h5>FURNITOWN</h5>
+            <a href="./">FURNITOWN</a>
             <div class="follow__us-icon">
               <p>FOLLOW US</p>
-              <i class="fa-solid fa-envelope"></i>
-              <i class="fa-brands fa-facebook"></i>
+              <a href="#">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
             </div>
           </div>
           <div class="nav__icon-list">
@@ -122,43 +124,45 @@
           </div>
         </div>
       </div>
-      <section class="container service">
-        <div class="service-us">
-          <div class="wrap__service-img">
-            <h2>Dịch vụ của chúng tôi</h2>
-            <img src="./img/home/bg_service.jpg" alt="" />
-          </div>
+      <section class="container">
+        <div class="service">
+          <div class="service-us">
+            <div class="wrap__service-img">
+              <h2>Dịch vụ của chúng tôi</h2>
+              <img src="./img/home/bg_service.jpg" alt="" />
+            </div>
 
-          <div class="service__advise">
-            <div class="advise__text">
-              <h4>Tư vấn thiết kế</h4>
-              <p>
-                Tư vấn về giá vật liệu theo nhu cầu khách hàng. Tư vấn mẫu mãu,
-                tư vấn thiết kế mẫu mã phù hợp và theo yêu cầu của khách hàng.
-                Soạn thảo hợp đồng. Nhận cọc và bắt đầu thực hiện theo hợp đồng.
-                Thiết kế, sản xuất thi công. Nghiệm thu.
-              </p>
-              <p class="pservice">
-                Thiết kế và thi công theo yêu cầu : nhà ở , karaoke , bar , cà
-                phê, văn phòng.
-              </p>
-            </div>
-            <div class="contact-product">
-              <p class="active">Liên hệ tư vấn</p>
-              <p>Xem sản phẩm</p>
+            <div class="service__advise">
+              <div class="advise__text">
+                <h4>Tư vấn thiết kế</h4>
+                <p>
+                  Tư vấn về giá vật liệu theo nhu cầu khách hàng. Tư vấn mẫu
+                  mãu, tư vấn thiết kế mẫu mã phù hợp và theo yêu cầu của khách
+                  hàng. Soạn thảo hợp đồng. Nhận cọc và bắt đầu thực hiện theo
+                  hợp đồng. Thiết kế, sản xuất thi công. Nghiệm thu.
+                </p>
+                <p>
+                  Thiết kế và thi công theo yêu cầu : nhà ở , karaoke , bar , cà
+                  phê, văn phòng.
+                </p>
+              </div>
+              <div class="contact-product">
+                <a href="./contact.html">Liên hệ tư vấn</a>
+                <a href="./product.html">Xem sản phẩm</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="service-construct">
-          <h4>Thi công dự án</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-            mollis tristique pellentesque. Praesent dapibus lectus neque, vel
-            convallis orci eleifend vel. Phasellus felis lectus, eleifend eget
-            quam eu, gravida sagittis urna. Sed nec nibh id nulla feugiat
-            sagittis. Maecenas hendrerit blandit pulvinar.
-          </p>
-          <img src="./img/home/service.jpg" alt="" />
+          <div class="service-construct">
+            <h4>Thi công dự án</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+              mollis tristique pellentesque. Praesent dapibus lectus neque, vel
+              convallis orci eleifend vel. Phasellus felis lectus, eleifend eget
+              quam eu, gravida sagittis urna. Sed nec nibh id nulla feugiat
+              sagittis. Maecenas hendrerit blandit pulvinar.
+            </p>
+            <img src="./img/home/service.jpg" alt="" />
+          </div>
         </div>
       </section>
     </main>
@@ -178,7 +182,11 @@
                 Minh
               </p>
               <p>Hotline: 0937.168.938</p>
-              <p>Email: noithatfunitown@gmail.com</p>
+              <a
+                href="mailto:noithatfurnitown@gmail.com?subject=Feedback&body=Message"
+                >Email: noithatfunitown@gmail.com</a
+              >
+              <!-- <p>Email: noithatfunitown@gmail.com</p> -->
             </div>
             <div class="back">
               <span> Back to top</span>
